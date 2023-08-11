@@ -83,7 +83,8 @@
           <button class="btn">Submit</button>
         </div>
       </div>
-      <div class="col-12 col-md-8">
+      <!-- NOTE: ***used d-none d-md-block syntax to have this block of code go away when it hits mobile!!*** -->
+      <div class="col-12 col-md-8 d-none d-md-block">
         <div class="row p-2">
           <h2>Text Over An Image</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repudiandae in minima.</p>
@@ -97,11 +98,11 @@
     <!-- small section with left side header and paragraph, right card container with side lines of icons and text inside-->
     <!-- TODO: have to use position relative and position absolute to spill right side card down a bit into section below.  -->
     <section class="row">
-      <div class="col-12 col-md-5">
+      <div class="col-12 col-md-5 order-2 order-md-1">
         <h2 class="p-2">Header Text</h2>
         <p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iste corporis et!</p>
       </div>
-      <div class="col-12 col-md-7">
+      <div class="col-12 col-md-7 order-1 order-md-2">
         <div class="row p-2">icon left, text right</div>
         <div class="row p-2">icon left, text right</div>
         <div class="row p-2">icon left, text right</div>
@@ -149,11 +150,11 @@
     <!-- TODO: have to set this JUST for mobile view, currently doing it one desktop -->
 
     <section class="row justify-content-around hero-row">
-      <div class="col-12 col-md-3 p-2 order-2">
+      <div class="col-12 col-md-3 p-2 order-2 order-md-1">
         <div class="row justify-content-center">good review from user</div>
         <div class="row justify-content-center">name of person</div>
       </div>
-      <div class="col-12 col-md-3 p-2 order-1">
+      <div class="col-12 col-md-3 p-2 order-1 order-md-2">
         <div class="row justify-content-center">3/3 star icons!</div>
         <div class="row justify-content-center">good review from user</div>
         <div class="row justify-content-center">name of person</div>
