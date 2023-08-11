@@ -56,13 +56,13 @@
   <main class="container-fluid">
     <!-- Header section, just top left centered text -->
     <section class="row">
-      <div class="col-12 p-2">
+      <div class="col-12 p-2 primary-dark text-light">
         Meet a Capybara today!
       </div>
     </section>
 
     <!-- First section, left side contains a form, right side contains text over a background image -->
-    <section class="row background-img">
+    <section class="row background-img primary-light text-light">
 
       <div class="col-12 col-md-4">
         <div class="hero-card">
@@ -84,25 +84,30 @@
         </div>
       </div>
       <!-- NOTE: ***used d-none d-md-block syntax to have this block of code go away when it hits mobile!!*** -->
+      <!-- TODO: have to figure out a way to set a background image here, having issues with setting background image link -->
       <div class="col-12 col-md-8 d-none d-md-block">
         <div class="row p-2">
           <h2>Text Over An Image</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repudiandae in minima.</p>
         </div>
         <div class="row p-2">
+          <img
+            src="https://images.unsplash.com/photo-1680994354810-aa25bbc69976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            alt="">
         </div>
       </div>
     </section>
 
 
     <!-- small section with left side header and paragraph, right card container with side lines of icons and text inside-->
-    <!-- TODO: have to use position relative and position absolute to spill right side card down a bit into section below.  -->
-    <section class="row">
-      <div class="col-12 col-md-5 order-2 order-md-1">
+    <!-- NOTE: bootstrap for position absolute and position relative -->
+    <section class="row parent-container hero-row primary-dark text-light">
+      <div class="col-12 col-md-5 order-2 order-md-1 card-adjust">
         <h2 class="p-2">Header Text</h2>
         <p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iste corporis et!</p>
       </div>
-      <div class="col-12 col-md-7 order-1 order-md-2">
+
+      <div class="col-12 col-md-7 order-1 order-md-2 child-container hero-card">
         <div class="row p-2">icon left, text right</div>
         <div class="row p-2">icon left, text right</div>
         <div class="row p-2">icon left, text right</div>
@@ -114,13 +119,15 @@
 
     <!-- left side large portrait image, right side block fo text, some headers, button at bottom -->
 
-    <section class="row">
+    <section class="row hero-row">
       <div class="col-12 col-md-4">
-        <div class="hero-card">
-          IMAGE HERE
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1647449806052-bd1042dd05f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcHliYXJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="BAD.IMG">
         </div>
       </div>
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-8 hero-card">
         <div class="row p-2">
           BLANK SPACE HERE, media query to delete this space on mobile
         </div>
@@ -146,20 +153,18 @@
 
     <!-- last section in main -->
     <!-- 3 comment/ review sections on cards, center card is raised out from others -->
-    <!-- NOTE: set order on items to order them differently when site enters into mobile view -->
-    <!-- TODO: have to set this JUST for mobile view, currently doing it one desktop -->
 
     <section class="row justify-content-around hero-row">
-      <div class="col-12 col-md-3 p-2 order-2 order-md-1">
+      <div class="col-12 col-md-3 p-2 order-2 order-md-1 hero-card">
         <div class="row justify-content-center">good review from user</div>
         <div class="row justify-content-center">name of person</div>
       </div>
-      <div class="col-12 col-md-3 p-2 order-1 order-md-2">
+      <div class="col-12 col-md-3 p-2 order-1 order-md-2 hero-card">
         <div class="row justify-content-center">3/3 star icons!</div>
         <div class="row justify-content-center">good review from user</div>
         <div class="row justify-content-center">name of person</div>
       </div>
-      <div class="col-12 col-md-3 p-2 order-3">
+      <div class="col-12 col-md-3 p-2 order-3 hero-card">
         <div class="row justify-content-center">good review from user</div>
         <div class="row justify-content-center">name of person</div>
       </div>
@@ -181,7 +186,7 @@
 
 
     <!-- section2 -->
-    <section class="row">
+    <section class="row hero-row primary-dark text-light">
       <h3 class="p-2">HEADER TEXT</h3>
       <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, itaque?</p>
     </section>

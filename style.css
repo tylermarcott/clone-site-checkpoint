@@ -13,15 +13,21 @@ body {
   padding: 1em;
 }
 
+.card-adjust {
+  padding: 1em;
+}
+
 .hero-row {
   min-height: 30vh;
 }
 
 .background-img {
-  background-image: "https://images.unsplash.com/photo-1647449806052-bd1042dd05f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcHliYXJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60";
+  background-image: url('https: //images.unsplash.com/photo-1680994354810-aa25bbc69976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
   object-fit: cover;
   object-position: top;
 }
+
+
 
 .primary-dark {
   background-color: var(--primaryDark);
@@ -32,6 +38,19 @@ body {
 }
 
 
+/* classes for creating offset on card in main */
+
+.parent-container {
+  position: relative;
+  align-items: right;
+  display: flex;
+}
+
+.child-container {
+  position: absolute;
+  top: 50px;
+  right: 3%;
+}
 
 
 
@@ -39,4 +58,16 @@ body {
 
 
 
-@media(min-width:768px) {}
+@media(max-width:768px) {
+
+  /* NOTE: setting position relative and absolute to both static in our media query will result in these properties being turned off. This solved the problem I was having when trying to switch to mobile. */
+  .parent-container {
+    position: static;
+  }
+
+  .child-container {
+    position: static;
+    top: 0px;
+    right: none;
+  }
+}
