@@ -3,3 +3,13 @@
 body {
   margin: 0;
 }
+
+.hero-card {
+  background-color: antiquewhite;
+  color: gray;
+  padding: 1em;
+}
+
+.hero-row {
+  min-height: 50vh;
+}
