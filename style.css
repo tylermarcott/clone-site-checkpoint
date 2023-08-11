@@ -1,4 +1,7 @@
-:root {}
+:root {
+  --primaryDark: rgb(80, 36, 80);
+  --primaryLight: rgb(150, 69, 150);
+}
 
 body {
   margin: 0;
@@ -11,5 +14,29 @@ body {
 }
 
 .hero-row {
-  min-height: 50vh;
+  min-height: 30vh;
 }
+
+.background-img {
+  background-image: "https://images.unsplash.com/photo-1647449806052-bd1042dd05f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcHliYXJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60";
+  object-fit: cover;
+  object-position: top;
+}
+
+.primary-dark {
+  background-color: var(--primaryDark);
+}
+
+.primary-light {
+  background-color: var(--primaryLight);
+}
+
+
+
+
+
+
+
+
+
+@media(min-width:768px) {}

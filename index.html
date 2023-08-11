@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,10 +37,12 @@
 
 
 <body class="debug">
-  <header class="container-fluid">
+  <header class="container-fluid text-light primary-dark">
     <section class="row">
-      <div class="col-1 p-2">icon</div>
-      <div class="col-9 p-2">Lorem, ipsum.</div>
+      <div class="col-1 p-2">
+        <i class="mdi mdi-emoticon-happy-outline"></i>
+      </div>
+      <div class="col-9 p-2">Capybara enthusiasts, Unite</div>
     </section>
   </header>
 
@@ -54,49 +57,51 @@
     <!-- Header section, just top left centered text -->
     <section class="row">
       <div class="col-12 p-2">
-        Subtle Heading
+        Meet a Capybara today!
       </div>
     </section>
 
     <!-- First section, left side contains a form, right side contains text over a background image -->
-    <section class="row">
-      <div class="col-4">
+    <section class="row background-img">
+
+      <div class="col-12 col-md-4">
         <div class="hero-card">
-          <h2>Header</h2>
-          <div>name</div>
-          <div>email</div>
+          <h2>Words for a Capybara</h2>
+          <div>Name:</div>
+          <div>Email:</div>
           <div class="row">
-            <div class="col-7">phone</div>
-            <div class="col-5">ext.</div>
+            <div class="col-7">Phone:</div>
+            <div class="col-5">Ext.:</div>
           </div>
-          <div>message</div>
+          <div>Message:</div>
           <div>
-            <div class="col-2">icon</div>
-            <div class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, excepturi.</div>
+            <div class="col-2">
+              <i class="mdi mdi-checkbox-outline"></i>
+            </div>
+            <div class="col-9">I love capybaras so much, they are the coolest animal ever.</div>
           </div>
-          <button class="btn">boop</button>
+          <button class="btn">Submit</button>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-md-8">
         <div class="row p-2">
           <h2>Text Over An Image</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repudiandae in minima.</p>
         </div>
         <div class="row p-2">
-          BACKGROUND IMAGE HERE
         </div>
       </div>
     </section>
 
 
     <!-- small section with left side header and paragraph, right card container with side lines of icons and text inside-->
-    <!-- TODO: have to use position relative and position absolute to spill right side card down a bit into section below  -->
+    <!-- TODO: have to use position relative and position absolute to spill right side card down a bit into section below.  -->
     <section class="row">
-      <div class="col-5">
+      <div class="col-12 col-md-5">
         <h2 class="p-2">Header Text</h2>
         <p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iste corporis et!</p>
       </div>
-      <div class="col-7">
+      <div class="col-12 col-md-7">
         <div class="row p-2">icon left, text right</div>
         <div class="row p-2">icon left, text right</div>
         <div class="row p-2">icon left, text right</div>
@@ -109,12 +114,12 @@
     <!-- left side large portrait image, right side block fo text, some headers, button at bottom -->
 
     <section class="row">
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <div class="hero-card">
           IMAGE HERE
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-md-8">
         <div class="row p-2">
           BLANK SPACE HERE, media query to delete this space on mobile
         </div>
@@ -140,20 +145,22 @@
 
     <!-- last section in main -->
     <!-- 3 comment/ review sections on cards, center card is raised out from others -->
+    <!-- NOTE: set order on items to order them differently when site enters into mobile view -->
+    <!-- TODO: have to set this JUST for mobile view, currently doing it one desktop -->
 
-    <section class="row">
-      <div class="col-3 p-2">
-        <div class="row">3/3 star icons!</div>
-        <div class="row">good review from user</div>
-        <div class="row">name of person</div>
+    <section class="row justify-content-around hero-row">
+      <div class="col-12 col-md-3 p-2 order-2">
+        <div class="row justify-content-center">good review from user</div>
+        <div class="row justify-content-center">name of person</div>
       </div>
-      <div class="col-3 p-2">
-        <div class="row">good review from user</div>
-        <div class="row">name of person</div>
+      <div class="col-12 col-md-3 p-2 order-1">
+        <div class="row justify-content-center">3/3 star icons!</div>
+        <div class="row justify-content-center">good review from user</div>
+        <div class="row justify-content-center">name of person</div>
       </div>
-      <div class="col-3 p-2">
-        <div class="row">good review from user</div>
-        <div class="row">name of person</div>
+      <div class="col-12 col-md-3 p-2 order-3">
+        <div class="row justify-content-center">good review from user</div>
+        <div class="row justify-content-center">name of person</div>
       </div>
 
 
