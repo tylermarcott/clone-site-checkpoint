@@ -13,6 +13,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,14 +39,15 @@
 </style>
 
 
+<!-- NOTE: add or remove debug  -->
 
-<body class="debug">
+<body class="bubble-font">
   <header class="container-fluid text-light primary-dark">
     <section class="row">
       <div class="col-1 p-2">
-        <i class="mdi mdi-emoticon-happy-outline"></i>
+        <i class="mdi mdi-emoticon-happy-outline fs-2"></i>
       </div>
-      <div class="col-9 p-2">Capybara enthusiasts, Unite</div>
+      <div class="col-9 p-2 fs-2">Capybara enthusiasts, Unite!</div>
     </section>
   </header>
 
@@ -56,7 +61,7 @@
   <main class="container-fluid">
     <!-- Header section, just top left centered text -->
     <section class="row">
-      <div class="col-12 p-2 primary-dark text-light">
+      <div class="col-12 p-2 primary-dark text-light fst-italic fs-5">
         Meet a Capybara today!
       </div>
     </section>
@@ -65,7 +70,7 @@
     <section class="row background-img primary-light text-light">
 
       <div class="col-12 col-md-4">
-        <div class="hero-card">
+        <div class="hero-card rounded-bottom custom-text-light">
           <h2>Words for a Capybara</h2>
           <div>Name:</div>
           <div>Email:</div>
@@ -80,7 +85,7 @@
             </div>
             <div class="col-9">I love capybaras so much, they are the coolest animal ever.</div>
           </div>
-          <button class="btn">Submit</button>
+          <button class="btn text-light">Submit</button>
         </div>
       </div>
       <!-- NOTE: ***used d-none d-md-block syntax to have this block of code go away when it hits mobile!!*** -->
@@ -107,7 +112,7 @@
         <p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iste corporis et!</p>
       </div>
 
-      <div class="col-12 col-md-7 order-1 order-md-2 child-container hero-card">
+      <div class="col-12 col-md-7 order-1 order-md-2 child-container hero-card rounded">
         <div class="row p-2">icon left, text right</div>
         <div class="row p-2">icon left, text right</div>
         <div class="row p-2">icon left, text right</div>
@@ -120,16 +125,18 @@
     <!-- left side large portrait image, right side block fo text, some headers, button at bottom -->
 
     <section class="row hero-row">
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-4 primary-light">
         <div>
-          <img
+          <!-- NOTE: used img-fit to fit image to it's parent container -->
+          <img class="img-fit"
             src="https://images.unsplash.com/photo-1647449806052-bd1042dd05f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcHliYXJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
             alt="BAD.IMG">
         </div>
       </div>
-      <div class="col-12 col-md-8 hero-card">
-        <div class="row p-2">
-          BLANK SPACE HERE, media query to delete this space on mobile
+      <!-- FIXME: when I add rounded bottom border to this dive, I have white sticking out lol -->
+      <div class="col-12 col-md-8 hero-card custom-text-light">
+        <!-- blank space above text -->
+        <div class="row p-2 small-card d-none d-md-block">
         </div>
         <div class="row">
           <div class="col-2 p-2">icon</div>
@@ -151,29 +158,26 @@
     </section>
 
 
+
+
     <!-- last section in main -->
     <!-- 3 comment/ review sections on cards, center card is raised out from others -->
 
-    <section class="row justify-content-around hero-row">
-      <div class="col-12 col-md-3 p-2 order-2 order-md-1 hero-card">
+    <section class="row justify-content-around hero-row primary-light">
+      <div class="col-12 col-md-3 p-2 order-2 order-md-1 hero-card mt-3 rounded-top custom-text-light">
         <div class="row justify-content-center">good review from user</div>
         <div class="row justify-content-center">name of person</div>
       </div>
-      <div class="col-12 col-md-3 p-2 order-1 order-md-2 hero-card">
+      <div class="col-12 col-md-3 p-2 order-1 order-md-2 hero-card mt-3 rounded-top custom-text-light">
         <div class="row justify-content-center">3/3 star icons!</div>
         <div class="row justify-content-center">good review from user</div>
         <div class="row justify-content-center">name of person</div>
       </div>
-      <div class="col-12 col-md-3 p-2 order-3 hero-card">
+      <div class="col-12 col-md-3 p-2 order-3 hero-card mt-3 rounded-top custom-text-light">
         <div class="row justify-content-center">good review from user</div>
         <div class="row justify-content-center">name of person</div>
       </div>
-
-
     </section>
-
-
-
   </main>
 
 
@@ -183,19 +187,13 @@
 
   <!-- footer containing 2 sections -->
   <footer class="container-fluid">
-
-
     <!-- section2 -->
     <section class="row hero-row primary-dark text-light">
       <h3 class="p-2">HEADER TEXT</h3>
       <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, itaque?</p>
     </section>
-
-
-
-
     <!-- section1 -->
-    <section class="row">
+    <section class="row card-light">
       <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cum.</p>
     </section>
   </footer>

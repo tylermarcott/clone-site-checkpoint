@@ -1,16 +1,26 @@
 :root {
-  --primaryDark: rgb(80, 36, 80);
-  --primaryLight: rgb(150, 69, 150);
+  --primaryLight: #7A7367ff;
+  --primaryDark: #262C2Aff;
+  --cardDark: #585A58ff;
+  --cardLight: #A8AEADff;
 }
 
 body {
   margin: 0;
 }
 
+.bubble-font {
+  font-family: 'Bubblegum Sans', cursive;
+}
+
 .hero-card {
-  background-color: antiquewhite;
+  background-color: var(--cardDark);
   color: gray;
   padding: 1em;
+}
+
+.small-card {
+  min-height: 6vh;
 }
 
 .card-adjust {
@@ -21,6 +31,23 @@ body {
   min-height: 30vh;
 }
 
+.card-light {
+  background-color: var(--cardLight);
+}
+
+.custom-text-light {
+  color: #d5eae6;
+}
+
+.img-fit {
+  max-width: 100%;
+}
+
+.jungle-text {
+  color: var(--darkFont);
+}
+
+/* FIXME: this background image does NOT work */
 .background-img {
   background-image: url('https: //images.unsplash.com/photo-1680994354810-aa25bbc69976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
   object-fit: cover;
@@ -48,8 +75,9 @@ body {
 
 .child-container {
   position: absolute;
-  top: 50px;
+  top: 100px;
   right: 3%;
+  background-color: var(--cardLight);
 }
 
 
