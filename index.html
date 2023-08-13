@@ -39,10 +39,10 @@
 </style>
 
 
-<!-- NOTE: add or remove debug  -->
+<!-- NOTE: create header that stays at the top when user scrolls by adding sticky-top class -->
 
 <body class="bubble-font">
-  <header class="container-fluid text-light primary-dark">
+  <header class="container-fluid text-light primary-dark sticky-top">
     <section class="row">
       <div class="col-1 p-2">
         <i class="mdi mdi-emoticon-happy-outline fs-2"></i>
@@ -67,38 +67,39 @@
     </section>
 
     <!-- First section, left side contains a form, right side contains text over a background image -->
-    <section class="row background-img primary-light text-light">
+    <section class="row primary-light text-light background-img">
 
       <div class="col-12 col-md-4">
         <div class="hero-card rounded-bottom custom-text-light">
           <h2>Words for a Capybara</h2>
-          <div>Name:</div>
-          <div>Email:</div>
+          <div class="border p-1">Name:</div>
+          <div class="border p-1">Email:</div>
           <div class="row">
-            <div class="col-7">Phone:</div>
-            <div class="col-5">Ext.:</div>
+            <!-- FIXME: border spillage -->
+            <div class="col-7 border p-1">Phone:</div>
+            <div class="col-5 border p-1">Ext.:</div>
           </div>
-          <div>Message:</div>
-          <div>
-            <div class="col-2">
-              <i class="mdi mdi-checkbox-outline"></i>
+          <div class="border p-1">
+            <div>Message:</div>
+            <div>
+              <div class="col-2 p-1">
+                <i class="mdi mdi-checkbox-outline"></i>
+              </div>
+              <div class="col-9">I love capybaras so much, they are the coolest animal ever.</div>
             </div>
-            <div class="col-9">I love capybaras so much, they are the coolest animal ever.</div>
           </div>
+
           <button class="btn text-light">Submit</button>
         </div>
       </div>
       <!-- NOTE: ***used d-none d-md-block syntax to have this block of code go away when it hits mobile!!*** -->
       <!-- TODO: have to figure out a way to set a background image here, having issues with setting background image link -->
       <div class="col-12 col-md-8 d-none d-md-block">
-        <div class="row p-2">
-          <h2>Text Over An Image</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repudiandae in minima.</p>
-        </div>
-        <div class="row p-2">
-          <img
-            src="https://images.unsplash.com/photo-1680994354810-aa25bbc69976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-            alt="">
+        <div class="row p-2 small">
+          <!-- FIXME: have to like add some width and height somehow, move this text block to the upper right corner on desktop -->
+          <h2>Woah, look! Is that a Capybara?</h2>
+          <p>Heck yes it's a Capybara. This is one of the most awesome animals ever to exist. Just look at that little
+            snoot.</p>
         </div>
       </div>
     </section>
@@ -107,6 +108,7 @@
     <!-- small section with left side header and paragraph, right card container with side lines of icons and text inside-->
     <!-- NOTE: bootstrap for position absolute and position relative -->
     <section class="row parent-container hero-row primary-dark text-light">
+      <!-- TODO: align text in center? -->
       <div class="col-12 col-md-5 order-2 order-md-1 card-adjust">
         <h2 class="p-2">Header Text</h2>
         <p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iste corporis et!</p>

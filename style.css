@@ -17,6 +17,7 @@ body {
   background-color: var(--cardDark);
   color: gray;
   padding: 1em;
+  border-radius: 2%;
 }
 
 .small-card {
@@ -49,9 +50,13 @@ body {
 
 /* FIXME: this background image does NOT work */
 .background-img {
-  background-image: url('https: //images.unsplash.com/photo-1680994354810-aa25bbc69976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-  object-fit: cover;
-  object-position: top;
+  background-image: url('https://images.unsplash.com/photo-1680994354810-aa25bbc69976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+  min-height: 50vh;
+  min-width: 20vh;
+  justify-content: end;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -97,5 +102,9 @@ body {
     position: static;
     top: 0px;
     right: none;
+  }
+
+  .background-img {
+    background-image: none;
   }
 }
