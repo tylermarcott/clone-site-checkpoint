@@ -69,13 +69,12 @@
     <!-- First section, left side contains a form, right side contains text over a background image -->
     <section class="row primary-light text-light background-img">
 
-      <div class="col-12 col-md-4">
-        <div class="hero-card rounded-bottom custom-text-light">
+      <div class="col-12 col-md-4 p-2">
+        <div class="hero-card rounded custom-text-light">
           <h2>Words for a Capybara</h2>
           <div class="border p-1">Name:</div>
           <div class="border p-1">Email:</div>
-          <div class="row">
-            <!-- FIXME: border spillage -->
+          <div class="row w-100 m-0">
             <div class="col-7 border p-1">Phone:</div>
             <div class="col-5 border p-1">Ext.:</div>
           </div>
@@ -89,11 +88,10 @@
             </div>
           </div>
 
-          <button class="btn text-light">Submit</button>
+          <button class="btn fs-5 text-warning p-2">Submit</button>
         </div>
       </div>
       <!-- NOTE: ***used d-none d-md-block syntax to have this block of code go away when it hits mobile!!*** -->
-      <!-- TODO: have to figure out a way to set a background image here, having issues with setting background image link -->
       <div class="col-12 col-md-8 d-none d-md-block">
         <div class="row p-2 small">
           <!-- FIXME: have to like add some width and height somehow, move this text block to the upper right corner on desktop -->
@@ -108,18 +106,57 @@
     <!-- small section with left side header and paragraph, right card container with side lines of icons and text inside-->
     <!-- NOTE: bootstrap for position absolute and position relative -->
     <section class="row parent-container hero-row primary-dark text-light">
-      <!-- TODO: align text in center? -->
-      <div class="col-12 col-md-5 order-2 order-md-1 card-adjust">
-        <h2 class="p-2">Header Text</h2>
-        <p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iste corporis et!</p>
+      <div class="col-12 col-md-5 order-2 order-md-1 card-adjust p-2">
+        <h2 class="p-2">Hard Working Capybaras</h2>
+        <p class="p-2">The Capybara is known to be a very hard working animal dedicated to their daily tasks!</p>
       </div>
 
       <div class="col-12 col-md-7 order-1 order-md-2 child-container hero-card rounded">
-        <div class="row p-2">icon left, text right</div>
-        <div class="row p-2">icon left, text right</div>
-        <div class="row p-2">icon left, text right</div>
-        <div class="row p-2">icon left, text right</div>
-        <div class="row p-2">icon left, text right</div>
+        <div class="row p-2">
+          <div class="col-1">
+            <i class="mdi mdi-arm-flex fs-3 primary-dark-text"></i>
+          </div>
+          <div class="col-7">
+            <p>Works hard, plays hard</p>
+          </div>
+        </div>
+
+        <div class="row p-2">
+          <div class="col-1">
+            <i class="mdi mdi-arrow-projectile-multiple fs-3 primary-dark-text"></i>
+          </div>
+          <div class="col-7">
+            <p>Hunts for snacks</p>
+          </div>
+        </div>
+
+        <div class="row p-2">
+          <div class="col-1">
+            <i class="mdi mdi-sleep fs-3 primary-dark-text"></i>
+          </div>
+          <div class="col-7">
+            <p>Takes many naps throughout the day</p>
+          </div>
+        </div>
+
+        <div class="row p-2">
+          <div class="col-1">
+            <i class="mdi mdi-emoticon-angry fs-3 primary-dark-text"></i>
+          </div>
+          <div class="col-7">
+            <p>Does not like naps being interrupted</p>
+          </div>
+        </div>
+
+        <div class="row p-2">
+          <div class="col-1">
+            <i class="mdi mdi-emoticon-happy fs-3 primary-dark-text"></i>
+          </div>
+          <div class="col-7">
+            <p>Very happy after naps and snacks</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -135,23 +172,26 @@
             alt="BAD.IMG">
         </div>
       </div>
+      <!-- TODO: needs work to layout of text -->
       <!-- FIXME: when I add rounded bottom border to this dive, I have white sticking out lol -->
-      <div class="col-12 col-md-8 hero-card custom-text-light">
+      <div class="col-12 col-md-8 hero-card custom-text-light rounded-bottom">
         <!-- blank space above text -->
         <div class="row p-2 small-card d-none d-md-block">
         </div>
         <div class="row">
-          <div class="col-2 p-2">icon</div>
+          <div class="col-1 p-2">
+            <i class="mdi mdi-crown-circle fs-2"></i>
+          </div>
           <div class="col-10">
-            <h3 p-2>HEADER</h3>
+            <h3 class="p-3">Soon Capybaras will be taking over the whole world.</h3>
           </div>
         </div>
-        <div class="row p-2">
-          SECONDARY HEADER
+        <div class="row p-2 text-warning">
+          How should I get ready for the impending Capybara takeover?
         </div>
         <div class="row p-2">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque fugiat dignissimos nulla sint
-            quibusdam vitae illo vel? Vitae, doloribus similique.</p>
+          <p class="m-0 ps-3">There is nothing to fear. Just make sure you have a bunch of snacks on hand and you should
+            be just fine! Trust me, I'm an expert.</p>
         </div>
         <div class="row">
           <button class="btn"></button>
@@ -165,19 +205,35 @@
     <!-- last section in main -->
     <!-- 3 comment/ review sections on cards, center card is raised out from others -->
 
+    <!-- TODO: space text and center vertically -->
     <section class="row justify-content-around hero-row primary-light">
-      <div class="col-12 col-md-3 p-2 order-2 order-md-1 hero-card mt-3 rounded-top custom-text-light">
-        <div class="row justify-content-center">good review from user</div>
-        <div class="row justify-content-center">name of person</div>
+      <div class="col-12 col-md-3 p-5 order-2 order-md-1 hero-card mt-3 rounded-top custom-text-light">
+        <div class="row text-center fs-3">Always love me a good Capybara! Wow. Just wow.</div>
+        <div class="row justify-content-center fs-5">- Dave</div>
       </div>
+
+      <!-- FIXME: having issue with display: block property preventing me from being able to use justify-content-center and aligning the star icons properly in their containers-->
       <div class="col-12 col-md-3 p-2 order-1 order-md-2 hero-card mt-3 rounded-top custom-text-light">
-        <div class="row justify-content-center">3/3 star icons!</div>
-        <div class="row justify-content-center">good review from user</div>
-        <div class="row justify-content-center">name of person</div>
+        <div class="row justify-content-center">
+          <div class="col-2 justify-content-center">
+            <i class="mdi mdi-star-circle fs-2"></i>
+          </div>
+          <div class="col-2">
+            <i class="mdi mdi-star-circle fs-2"></i>
+          </div>
+          <div class="col-2">
+            <i class="mdi mdi-star-circle fs-2"></i>
+          </div>
+        </div>
+        <div class="row text-center fs-3 ps-5 pe-5">If I had to give Capybaras a rating, it would be 3/3
+          stars for
+          SURE!</div>
+        <div class="row justify-content-center fs-5">- Amanda</div>
       </div>
-      <div class="col-12 col-md-3 p-2 order-3 hero-card mt-3 rounded-top custom-text-light">
-        <div class="row justify-content-center">good review from user</div>
-        <div class="row justify-content-center">name of person</div>
+
+      <div class="col-12 col-md-3 p-5 order-3 hero-card mt-3 rounded-top custom-text-light">
+        <div class="row text-center fs-3">Capybaras changed my life. Can't get enough of them!</div>
+        <div class="row justify-content-center fs-5">- Taylor</div>
       </div>
     </section>
   </main>
@@ -190,13 +246,16 @@
   <!-- footer containing 2 sections -->
   <footer class="container-fluid">
     <!-- section2 -->
-    <section class="row hero-row primary-dark text-light">
-      <h3 class="p-2">HEADER TEXT</h3>
-      <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, itaque?</p>
+    <!-- TODO: Text is weirdly spaced, need to change the size of the containers or something -->
+    <section class="row hero-row primary-dark text-light p-2">
+      <h3 class="p-2">There's nothing to fear, Capybara is here!</h3>
+      <p class="p-2">Ever feeling down? Just think of a wonderful little Capybara. That will straighten you right out
+        better than a strong cup of coffee on a Sunday morning!</p>
     </section>
     <!-- section1 -->
-    <section class="row card-light">
-      <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cum.</p>
+    <!-- FIXME: align-items-center not working again lol. Trying to bring text down to center of row. -->
+    <section class="row card-light align-items-center">
+      <p class="p-2">Brought to you by Capybara4prez Inc.</p>
     </section>
   </footer>
 </body>

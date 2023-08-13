@@ -17,11 +17,16 @@ body {
   background-color: var(--cardDark);
   color: gray;
   padding: 1em;
-  border-radius: 2%;
 }
 
+
+/* only used for blank space filler card */
 .small-card {
-  min-height: 6vh;
+  min-height: 9vh;
+}
+
+.custom-rounded {
+  border-radius: 2%;
 }
 
 .card-adjust {
@@ -48,7 +53,7 @@ body {
   color: var(--darkFont);
 }
 
-/* FIXME: this background image does NOT work */
+
 .background-img {
   background-image: url('https://images.unsplash.com/photo-1680994354810-aa25bbc69976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
   min-height: 50vh;
@@ -69,6 +74,10 @@ body {
   background-color: var(--primaryLight);
 }
 
+.primary-dark-text {
+  color: var(--primaryDark);
+}
+
 
 /* classes for creating offset on card in main */
 
@@ -80,7 +89,7 @@ body {
 
 .child-container {
   position: absolute;
-  top: 100px;
+  top: 40px;
   right: 3%;
   background-color: var(--cardLight);
 }
