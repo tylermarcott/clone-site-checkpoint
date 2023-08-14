@@ -19,6 +19,11 @@ body {
   padding: 1em;
 }
 
+.max-fill {
+  width: 100%;
+  height: 100%;
+}
+
 
 /* only used for blank space filler card */
 .small-card {
@@ -39,6 +44,12 @@ body {
 
 .card-light {
   background-color: var(--cardLight);
+}
+
+/* creating an opaque glass-like background so the text is easier to read on top of a background photo */
+.transparent-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
 }
 
 .custom-text-light {

@@ -67,7 +67,7 @@
     </section>
 
     <!-- First section, left side contains a form, right side contains text over a background image -->
-    <section class="row primary-light text-light background-img">
+    <section class="row primary-light text-light background-img justify-content-between">
 
       <div class="col-12 col-md-4 p-2">
         <div class="hero-card rounded custom-text-light">
@@ -80,7 +80,7 @@
           </div>
           <div class="border p-1">
             <div>Message:</div>
-            <div>
+            <div class="row justify-content-end">
               <div class="col-2 p-1">
                 <i class="mdi mdi-checkbox-outline"></i>
               </div>
@@ -92,11 +92,14 @@
         </div>
       </div>
       <!-- NOTE: ***used d-none d-md-block syntax to have this block of code go away when it hits mobile!!*** -->
-      <div class="col-12 col-md-8 d-none d-md-block">
-        <div class="row p-2 small">
-          <!-- FIXME: have to like add some width and height somehow, move this text block to the upper right corner on desktop -->
-          <h2>Woah, look! Is that a Capybara?</h2>
-          <p>Heck yes it's a Capybara. This is one of the most awesome animals ever to exist. Just look at that little
+      <div class="col-12 col-md-4 d-none d-md-block transparent-card rounded m-2">
+        <div class="row p-2 small-card">
+          <div class="fs-4 primary-dark-text">
+            <h1 class="p-0 text-warning">Woah...</h1>
+            Look! Is that a Capybara?
+          </div>
+          <p class="primary-dark-text">Heck yes it's a Capybara. This is one of the most awesome animals ever to exist.
+            Just look at that little
             snoot.</p>
         </div>
       </div>
@@ -108,10 +111,10 @@
     <section class="row parent-container hero-row primary-dark text-light">
       <div class="col-12 col-md-5 order-2 order-md-1 card-adjust p-2">
         <h2 class="p-2">Hard Working Capybaras</h2>
-        <p class="p-2">The Capybara is known to be a very hard working animal dedicated to their daily tasks!</p>
+        <p class="p-3">The Capybara is known to be a very hard working animal dedicated to their daily tasks!</p>
       </div>
 
-      <div class="col-12 col-md-7 order-1 order-md-2 child-container hero-card rounded">
+      <div class="col-12 col-md-7 order-1 order-md-2 child-container hero-card rounded text-light">
         <div class="row p-2">
           <div class="col-1">
             <i class="mdi mdi-arm-flex fs-3 primary-dark-text"></i>
@@ -170,9 +173,9 @@
           <img class="img-fit"
             src="https://images.unsplash.com/photo-1647449806052-bd1042dd05f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcHliYXJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
             alt="BAD.IMG">
+          <!-- <video src="https://www.youtube.com/shorts/RYDYO8_1on0" alt="bad.video"></video> -->
         </div>
       </div>
-      <!-- TODO: needs work to layout of text -->
       <!-- FIXME: when I add rounded bottom border to this dive, I have white sticking out lol -->
       <div class="col-12 col-md-8 hero-card custom-text-light rounded-bottom">
         <!-- blank space above text -->
@@ -182,7 +185,7 @@
           <div class="col-1 p-2">
             <i class="mdi mdi-crown-circle fs-2"></i>
           </div>
-          <div class="col-10">
+          <div class="col-10 p-0">
             <h3 class="p-3">Soon Capybaras will be taking over the whole world.</h3>
           </div>
         </div>
@@ -190,7 +193,7 @@
           How should I get ready for the impending Capybara takeover?
         </div>
         <div class="row p-2">
-          <p class="m-0 ps-3">There is nothing to fear. Just make sure you have a bunch of snacks on hand and you should
+          <p class="m-0 p-1">There is nothing to fear. Just make sure you have a bunch of snacks on hand and you should
             be just fine! Trust me, I'm an expert.</p>
         </div>
         <div class="row">
@@ -215,14 +218,14 @@
       <!-- FIXME: having issue with display: block property preventing me from being able to use justify-content-center and aligning the star icons properly in their containers-->
       <div class="col-12 col-md-3 p-2 order-1 order-md-2 hero-card mt-3 rounded-top custom-text-light">
         <div class="row justify-content-center">
-          <div class="col-2 justify-content-center">
-            <i class="mdi mdi-star-circle fs-2"></i>
+          <div class="col-2 text-center">
+            <i class="mdi mdi-star-circle fs-2 text-warning"></i>
           </div>
-          <div class="col-2">
-            <i class="mdi mdi-star-circle fs-2"></i>
+          <div class="col-2 text-center">
+            <i class="mdi mdi-star-circle fs-1 text-warning"></i>
           </div>
-          <div class="col-2">
-            <i class="mdi mdi-star-circle fs-2"></i>
+          <div class="col-2 text-center">
+            <i class="mdi mdi-star-circle fs-2 text-warning"></i>
           </div>
         </div>
         <div class="row text-center fs-3 ps-5 pe-5">If I had to give Capybaras a rating, it would be 3/3
